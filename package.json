@@ -1,0 +1,34 @@
+{
+  "name": "element-plus-custom-playground",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "vite --host",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@element-plus/icons-vue": "2.3.1",
+    "@hui/icons-vue": "3.0.0-alpha.3",
+    "@hui/locale": "3.0.0-alpha.3",
+    "@popperjs/core": "npm:@sxzz/popperjs-es@^2.11.7",
+    "@vueuse/core": "^10.1.2",
+    "element-plus": "2.7.3",
+    "lodash-unified": "^1.0.2",
+    "@ctrl/tinycolor": "4.1.0",
+    "hui": "3.0.0-alpha.25",
+    "vue": "^3.4.1",
+    "@vue/shared": "^3.4.1",
+    "unocss": "^0.58.0"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^2.4.6",
+    "@types/node": "^18.11.18",
+    "@vitejs/plugin-vue": "^4.5.2",
+    "eslint": "^8.52.0",
+    "typescript": "^5.2.2",
+    "vite": "^4.5.0",
+    "vite-plugin-vue-devtools": "^7.0.15",
+    "vue-tsc": "^1.8.25"
+  }
+}
