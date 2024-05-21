@@ -9,14 +9,11 @@
   },
   "dependencies": {
     "@element-plus/icons-vue": "2.3.1",
-    "@hui/icons-vue": "3.0.0-alpha.3",
-    "@hui/locale": "3.0.0-alpha.3",
     "@popperjs/core": "npm:@sxzz/popperjs-es@^2.11.7",
     "@vueuse/core": "^10.1.2",
     "element-plus": "2.7.3",
     "lodash-unified": "^1.0.2",
     "@ctrl/tinycolor": "4.1.0",
-    "hui": "3.0.0-alpha.25",
     "vue": "^3.4.1",
     "@vue/shared": "^3.4.1",
     "unocss": "^0.58.0"
