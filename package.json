@@ -15,6 +15,7 @@
     "lodash-unified": "^1.0.2",
     "@ctrl/tinycolor": "4.1.0",
     "vue": "^3.4.1",
+    "dayjs": "^1.11.11",
     "@vue/shared": "^3.4.1",
     "unocss": "^0.58.0"
   },
@@ -22,6 +23,7 @@
     "@antfu/eslint-config": "^2.4.6",
     "@types/node": "^18.11.18",
     "@vitejs/plugin-vue": "^4.5.2",
+    "@vitejs/plugin-vue-jsx": "^3.0.2",
     "eslint": "^8.52.0",
     "typescript": "^5.2.2",
     "vite": "^4.5.0",
