@@ -37,39 +37,41 @@ const options = [
     label: 'Option5',
   },
 ]
+
+const codeSnippet = ref(`
+<el-input v-model="input" style="width: 240px" placeholder="Please input" />
+<el-button type="primary" :icon="Search">Search</el-button>
+<el-checkbox v-model="checked1" label="Option 1" size="large" />
+<el-checkbox v-model="checked2" label="Option 2" size="large" />
+<el-select v-model="value" placeholder="Select" style="width: 240px">
+  <el-option v-for="item in options" :key="item.value" :label="item.label" :value="item.value"
+    :disabled="item.disabled" />
+</el-select>
+<el-date-picker v-model="value1" type="date" placeholder="Pick a day" />
+`)
 </script>
 <template>
-  <div class="flex flex-col p-20 gap-4">
-    <div class="flex gap-4 items-center">
-      <span>el-input with custom:</span>
-      <el-input v-model="input" style="width: 240px" placeholder="Please input" />
-    </div>
-    <div class="flex gap-4 items-center">
-      <span>el-button with custom:</span>
-      <el-button type="primary" :icon="Search">Search</el-button>
-    </div>
-    <div class="flex gap-4 items-center">
-      <span>el-checkbox with custom:</span>
-      <div>
-        <el-checkbox v-model="checked1" label="Option 1" size="large" />
-        <el-checkbox v-model="checked2" label="Option 2" size="large" />
-      </div>
-    </div>
-
-    <div class="flex gap-4 items-center">
-      <span>el-select with custom:</span>
-      <div>
-        <el-select v-model="value" placeholder="Select" style="width: 240px">
-          <el-option v-for="item in options" :key="item.value" :label="item.label" :value="item.value"
-            :disabled="item.disabled" />
-        </el-select>
-      </div>
-    </div>
-    <div class="flex gap-4 items-center">
-      <span>el-date-picker with custom:</span>
-      <div>
-        <el-date-picker v-model="value1" type="date" placeholder="Pick a day" />
-      </div>
-    </div>
+  <div class="flex flex-col px-20 gap-4">
+    <el-input v-model="input" style="width: 240px" placeholder="Please input" />
+    <el-button type="primary" :icon="Search">Search</el-button>
+    <el-checkbox v-model="checked1" label="Option 1" size="large" />
+    <el-checkbox v-model="checked2" label="Option 2" size="large" />
+    <el-select v-model="value" placeholder="Select" style="width: 240px">
+      <el-option v-for="item in options" :key="item.value" :label="item.label" :value="item.value"
+        :disabled="item.disabled" />
+    </el-select>
+    <el-date-picker v-model="value1" type="date" placeholder="Pick a day" />
+  </div>
+  <div class="px-20">
+    <pre>{{ codeSnippet }}</pre>
   </div>
 </template>
+
+<style scoped>
+pre {
+  background-color: #f5f5f5;
+  padding: 10px;
+  border: 1px solid #ddd;
+  overflow: auto;
+}
+</style>
